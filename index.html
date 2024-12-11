@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Exchange App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="auth-forms" class="auth-container">
+        <!-- Login Form -->
+        <form id="login-form" class="auth-form">
+          <h2>Login</h2>
+          <div class="form-group">
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="toggle-form">
+            <span>Don't have an account? </span>
+            <a id="show-register">Register</a>
+          </div>
+          <div id="login-message"></div>
+        </form>
+
+        <!-- Register Form -->
+        <form id="register-form" class="auth-form" style="display: none;">
+          <h2>Register</h2>
+          <div class="form-group">
+            <label for="register-username">Username</label>
+            <input type="text" id="register-username" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" required>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="toggle-form">
+            <span>Already have an account? </span>
+            <a id="show-login">Login</a>
+          </div>
+          <div id="register-message"></div>
+        </form>
+      </div>
+      <div id="converter-container" style="display: none;"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
